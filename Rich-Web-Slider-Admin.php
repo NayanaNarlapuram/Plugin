@@ -79,10 +79,10 @@
 		}
 		else
 		{
-			wp_die('Security check fail'); 
+			wp_die('Security check fail');
 		}
 	}
-	
+
 	$Rich_WebDat = $wpdb->get_results($wpdb->prepare("SELECT * FROM $table_name WHERE id>%d", 0));
 	$Rich_WebIm = $wpdb->get_results($wpdb->prepare("SELECT * FROM $table_name1 WHERE id>%d order by id", 0));
 	$Rich_WebVideo = $wpdb->get_results($wpdb->prepare("SELECT * FROM $table_name1_1 WHERE id>%d order by id", 0));
@@ -124,7 +124,7 @@
 				</tr>
 			</table>
 			<table class='rich_web_Tit_Table2'>
-			<?php for($i=0;$i<count($Rich_WebDat);$i++){?> 
+			<?php for($i=0;$i<count($Rich_WebDat);$i++){?>
 				<tr class='rich_web_Tit_Table_Tr2'>
 					<td><?php echo $i+1; ?></td>
 					<td><?php echo $Rich_WebDat[$i]->Slider_Title; ?></td>
@@ -250,7 +250,7 @@
 					</td>
 				</tr>
 			</table>
-			<table class='rich_web_SaveSl_Table2'>
+		<table class='rich_web_SaveSl_Table2'>
 				<tr>
 					<td> No </td>
 					<td> Image </td>

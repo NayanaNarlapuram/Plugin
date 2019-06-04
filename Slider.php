@@ -71,7 +71,7 @@
 		wp_enqueue_style( 'fontawesomeSl-css' );
 	}
 
-	register_activation_hook(__FILE__,'Ric_Web_Slider_wp_activate');
+
 	function Ric_Web_Slider_wp_activate()
 	{
 		require_once('Rich-Web-Slider-Install.php');

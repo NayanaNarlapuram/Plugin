@@ -42,7 +42,7 @@
 
 				$New_RW_Slider_Desc = str_replace("\&","&", esc_html('<p><span style="color: ' . $Rich_Web_Effect[0]->Rich_Web_Sl_DS_DC . '; font-size: ' . $Rich_Web_Effect[0]->Rich_Web_Sl_DS_DFS . 'px; font-family: ' . $Rich_Web_Effect[0]->Rich_Web_Sl_DS_DFF . ';">' . $Rich_Web_Slider_Desc[$i]->Sl_Img_Description . '</span></p>'));
 			}
-			else 
+			else
 			{
 				$New_RW_Slider_Desc = str_replace("\&","&", esc_html('<p>' . $Rich_Web_Slider_Desc[$i]->Sl_Img_Description . '</p>'));
 			}

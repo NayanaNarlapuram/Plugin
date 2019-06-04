@@ -29,18 +29,18 @@
 		wp_enqueue_script('Rich_Web_Photo_Slider3');
 		wp_enqueue_script('Rich_Web_Photo_Slider4');
 		wp_enqueue_script("jquery");
-		
-		wp_register_style( 'fontawesomeSl-css', plugins_url('/Style/richwebicons.css', __FILE__)); 
+
+		wp_register_style( 'fontawesomeSl-css', plugins_url('/Style/richwebicons.css', __FILE__));
 		wp_enqueue_style( 'fontawesomeSl-css' );
 	}
 	add_action("admin_menu", 'Rich_Web_Slider_Admin_Menu' );
-	function Rich_Web_Slider_Admin_Menu() 
+	function Rich_Web_Slider_Admin_Menu()
 	{
 		$complete_url = wp_nonce_url( '', 'edit-menu_', 'Rich_Web_PSlider_Nonce' );
 		add_menu_page('Rich-Web Slider Admin' . $complete_url,'Photo Slider','manage_options','Rich-Web Slider Admin' . $complete_url,'Manage_Rich_Web_Slider_Admin',plugins_url('/Images/admin.png',__FILE__));
 		add_submenu_page( 'Rich-Web Slider Admin' . $complete_url, 'Rich-Web Slider Admin', 'Slider Manager', 'manage_options', 'Rich-Web Slider Admin' . $complete_url, 'Manage_Rich_Web_Slider_Admin');
 		add_submenu_page( 'Rich-Web Slider Admin' . $complete_url, 'Rich-Web Slider General', 'Slider Options', 'manage_options', 'Rich-Web Slider General' . $complete_url, 'Manage_Rich_Web_Slider_General');
-		
+
 	}
 	function Manage_Rich_Web_Slider_Admin()
 	{
@@ -62,12 +62,12 @@
 	{
 		wp_enqueue_style('wp-color-picker');
 		wp_enqueue_script('wp-color-picker');
-		
+
 		wp_register_script('Rich_Web_Photo_Slider', plugins_url('Scripts/Rich-Web-Slider-Admin.js',__FILE__),array('jquery','jquery-ui-core'));
 		wp_localize_script('Rich_Web_Photo_Slider', 'object', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 		wp_enqueue_script('Rich_Web_Photo_Slider');
 
-		wp_register_style( 'fontawesomeSl-css', plugins_url('/Style/richwebicons.css', __FILE__)); 
+		wp_register_style( 'fontawesomeSl-css', plugins_url('/Style/richwebicons.css', __FILE__));
 		wp_enqueue_style( 'fontawesomeSl-css' );
 	}
 
@@ -90,5 +90,5 @@
 			array( 'wp-color-picker' ) // You must include these here.
 		);
 	}
-	add_action( 'admin_enqueue_scripts', 'Rich_Web_Photo_Slider_Color' );
+
 ?>

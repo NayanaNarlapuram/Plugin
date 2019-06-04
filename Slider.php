@@ -90,5 +90,5 @@
 			array( 'wp-color-picker' ) // You must include these here.
 		);
 	}
-
+add_action( 'admin_enqueue_scripts', 'Rich_Web_Photo_Slider_Color' );
 ?>

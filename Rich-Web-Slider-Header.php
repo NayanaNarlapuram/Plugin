@@ -14,7 +14,7 @@
 	.Rich_Web_Header_Free_Version_Shd:after { transform: rotate(3deg); -moz-transform: rotate(3deg); -webkit-transform: rotate(3deg); right: 10px; left: auto; }
 	.Rich_Web_Header_Free_Version a { padding: 5px 130px; transition: all 0.5s; background-color: #6ecae9; }
 	.Rich_Web_Header_Free_Version a:hover { color: #005e7d !important; background-color: #6ecae9; }
-	.Rich_Web_Header_Contacts { position: relative; margin-top: 12px; font-size: 16px; padding: 10px; } 
+	.Rich_Web_Header_Contacts { position: relative; margin-top: 12px; font-size: 16px; padding: 10px; }
 	.Rich_Web_Header_Contacts a { text-decoration: none; color: #fff; margin-left: 10px; padding: 5px 7px; border-radius: 5px; background-color: #6ecae9; box-shadow: 0px 0px 10px #30a9d1; border: 1px solid #30a9d1; }
 	.Rich_Web_Header_Contacts a:hover { background-color: #30a9d1; color: #ffffff; box-shadow: 0px 0px 10px #30a9d1; }
 </style>

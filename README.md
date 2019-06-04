@@ -1,4 +1,6 @@
-===========Photoslider  Plugin=============================
+===========Photoslider  Plugin==============
+
+
 It is very simple to create slider in your WordPress website. 
 You can add pictures (PNG, JPG and GIF), as well as, add posts, pages and in template files.
  Slider allows to add titles, descriptions and links to unlimited photos.
